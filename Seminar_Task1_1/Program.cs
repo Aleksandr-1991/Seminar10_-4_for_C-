@@ -1,4 +1,5 @@
-﻿// Зад. 24. Напишите прогу, кот приним на вход число (А) и выдаёт сумму чисел от 1 до А.
+﻿using System.Globalization;
+// Зад. 24. Напишите прогу, кот приним на вход число (А) и выдаёт сумму чисел от 1 до А.
 // 7->28,  4->10,  8->36.
 // Ранее писали код так:
 
@@ -18,12 +19,12 @@
 
 // Синтаксис f-ции:
 int Parse (string text) {
-    Console.WriteLine(text);
+    Console.Write(text);
     int A = Convert.ToInt32(Console.ReadLine());
     return A;
 }
-string abc = "Введите qwerty";
-int number = Parse (abc);
+// string abc = "Введите qwerty";
+// int number1 = Parse (abc);
 
 // int - тип возвращаемого значения;
 // Parse - Произвольное название ф-ции;
@@ -33,3 +34,20 @@ int number = Parse (abc);
 // // Аргументы д-совпадать с типом вводимых данных 
 // // ("Введите qwerty" это тип string;  false это тип bool isTrue, 12345 это тип int)
 
+int Sum (int number2)
+{
+    int sum = 0;
+    for (int i = 0; i <= number2; i++)
+    {
+        sum += i;
+    }
+    return sum;
+}
+// int a = Sum(4); //10
+// int b = Sum(5); //15
+// int c = Sum(6); //21
+// Console.WriteLine("{0}, {1}, {2}", a, b, c);
+
+int number1 = Parse ("Введите число");
+int result = Sum (number1);
+Console.Write($"Итоговая сумма: {result}");
