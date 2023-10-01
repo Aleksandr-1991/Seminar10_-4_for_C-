@@ -4,7 +4,7 @@
 // 89126 -> 5
 int GetNumber ()
 {
-    Console.WriteLine("Введите число: ");
+    Console.Write("Введите число: ");
     int number = Convert.ToInt32(Console.ReadLine());
     return number;
 }
