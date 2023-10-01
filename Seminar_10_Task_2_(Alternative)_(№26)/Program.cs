@@ -10,7 +10,7 @@ static int DigitsNumber (int value)
 {
     if (value < 0)
     {
-        value = -value;
+        value *= -1;
     }
     string number = value.ToString();
     return number.Length;
