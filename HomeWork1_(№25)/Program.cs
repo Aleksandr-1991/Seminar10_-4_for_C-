@@ -9,17 +9,17 @@ int NumberB (string text)
 {
     Console.Write(text);
     int number = Convert.ToInt32(Console.ReadLine());
-    if (number %1 != 0 || number < 0)
+    if (number %1 != 0 || number < 1)
     {
-        Console.WriteLine("Нужно было ввести Натуральное число! Введённая Cтепень будет условно приравнена к 0.");
+    Console.WriteLine("Нужно было ввести натуральное число. Введённая Cтепень будет условно приравнена к 1!");
     } 
     return number;
 }
 
 int Exponent (int A, int B)
 {
-    int result = 1;
-    for (int i=1; i<=B; i++)
+    int result = A;
+    for (int i=1; i<B; i++)
     {
         result *= A;
     }
