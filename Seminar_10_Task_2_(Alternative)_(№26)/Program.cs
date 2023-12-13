@@ -1,4 +1,4 @@
-﻿// Альтерантивное решение задачи по подсчёту размерности числа (ч/з строку).
+﻿// // Альтерантивное решение задачи по подсчёту размерности числа (ч/з строку).
 
 int Print (string text)
 {
@@ -8,10 +8,7 @@ int Print (string text)
 }
 static int DigitsNumber (int value)
 {
-    if (value < 0)
-    {
-        value *= -1;
-    }
+    value = value>0 ? value : -value; //- Запомнить!
     string number = value.ToString();
     return number.Length;
 }

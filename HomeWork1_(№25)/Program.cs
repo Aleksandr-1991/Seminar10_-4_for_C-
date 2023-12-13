@@ -1,30 +1,27 @@
 ﻿// Зад. 25: Нап цикл, кот приним на вход два числа (A и B) и возводит число A в натуральную степень B.
-int NumberA (string text)
+double GetNumberA (string text)
 {
     Console.Write(text);
-    int number = Convert.ToInt32(Console.ReadLine());
+    double number = Convert.ToDouble(Console.ReadLine());
     return number;
 }
-int NumberB (string text)
-{
+double GetNumberB (string text) {
+    inputNumberB:  
     Console.Write(text);
-    int number = Convert.ToInt32(Console.ReadLine());
+    double number = double.Parse(Console.ReadLine());
     if (number %1 != 0 || number < 1)
     {
-    Console.WriteLine("Нужно было ввести натуральное число. Введённая Cтепень будет условно приравнена к 1!");
-    } 
+        Console.WriteLine("Введённое число не натуральное. Повторите ввод.");
+        goto inputNumberB;
+    }
     return number;
 }
-
-int Exponent (int A, int B)
+double Exponent (double A, double B)
 {
-    int result = A;
-    for (int i=1; i<B; i++)
-    {
-        result *= A;
-    }
+    double result = A;
+    for (int i=1; i<B; i++)  result *= A;
     return result;
 }
-int numberA = NumberA("Введите число A (которое будем возводить в степень): ");
-int numberB = NumberB("Введите натуральное число B (та самая степень): ");
+double numberA = GetNumberA("Введите число A (которое будем возводить в степень): ");
+double numberB = GetNumberB("Введите натуральное число B (та самая степень): ");
 Console.WriteLine($"Результат возведения в степень равен: {Exponent(numberA, numberB)}");

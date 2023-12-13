@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_Task1_1\\Seminar_Task1_1.csproj": {}
+    "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_10_Task_1_(Functions)\\Seminar_Task1_1.csproj": {}
   },
   "projects": {
-    "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_Task1_1\\Seminar_Task1_1.csproj": {
+    "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_10_Task_1_(Functions)\\Seminar_Task1_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_Task1_1\\Seminar_Task1_1.csproj",
+        "projectUniqueName": "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_10_Task_1_(Functions)\\Seminar_Task1_1.csproj",
         "projectName": "Seminar_Task1_1",
-        "projectPath": "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_Task1_1\\Seminar_Task1_1.csproj",
+        "projectPath": "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_10_Task_1_(Functions)\\Seminar_Task1_1.csproj",
         "packagesPath": "C:\\Users\\Alex & Lena\\.nuget\\packages\\",
-        "outputPath": "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_Task1_1\\obj\\",
+        "outputPath": "C:\\Обуч!\\Seminar10_(4_for_C#)\\Seminar_10_Task_1_(Functions)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alex & Lena\\AppData\\Roaming\\NuGet\\NuGet.Config"
