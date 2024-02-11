@@ -2,14 +2,14 @@
 int GetNumber () 
 {
     Console.Write("Введите число: ");
-    int number = Convert.ToInt32(Console.ReadLine());
-    return number;
+    return Convert.ToInt32(Console.ReadLine());
 }
 int CountElements (int number)
 {   
     int count = 1;
-    while (number/10 != 0) {number = number/10; count++;}
-    return count;  // - если использовать цикл for, то return count не видит переменную count
+ // while (number/10 != 0) {number /= 10; count++;}
+    for (; number/10 != 0; count++) number /= 10;
+    return count;
 }
 int getNumber = GetNumber();
 int Size = CountElements(getNumber);

@@ -1,10 +1,8 @@
 ﻿// // Альтерантивное решение задачи по подсчёту размерности числа (ч/з строку).
-
 int Print (string text)
 {
     Console.Write(text);
-    int number = Convert.ToInt32(Console.ReadLine());
-    return number;
+    return Convert.ToInt32(Console.ReadLine());
 }
 static int DigitsNumber (int value)
 {
@@ -13,4 +11,4 @@ static int DigitsNumber (int value)
     return number.Length;
 }
 int number = Print("Введите число:  ");
-Console.Write($"Кол-во цифр в данном числе:  {DigitsNumber(number)}");
+Console.Write($"Кол-во цифр в данном числе: {DigitsNumber(number)}");
